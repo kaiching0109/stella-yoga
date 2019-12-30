@@ -1,0 +1,16 @@
+@import '../../abstracts/variables';
+
+.parallel-card {
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  border-radius: 3px;
+  width: 75%;
+  background-color: $color-white;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+  padding: 6rem;
+
+  & > * {
+    transform: skewX(12deg);
+  }
+}

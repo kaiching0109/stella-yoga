@@ -1,10 +1,9 @@
 import React from 'react';
 
-const ParallelCard = ({children}) =>  (
-    <div className="parallel-card">
-      {children}
-    </div>
+const ParallelCard = ({children}) => (
+  <div className="parallel-card">
+    {children}
+  </div>
 )
 
-
-export default ParallelCard;
+export default ParallelCard

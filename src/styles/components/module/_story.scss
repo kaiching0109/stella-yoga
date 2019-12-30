@@ -1,0 +1,11 @@
+.story {
+  padding-left: 9rem;
+
+  &__shape {
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+  }
+  
+}
