@@ -3,17 +3,17 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+import { PageContainer } from '../../components/Container'
 import Navigation from '../Navigation';
 import LandingPage from '../Landing';
 import * as ROUTES from '../../constants/routes';
-const App = () => {
-  console.log('hi')
-  return (
+const App = () => (
     <Router>
       <div>
-        <Route exact path={ROUTES.LANDING} component={LandingPage} />
+        <PageContainer>
+          <Route exact path={ROUTES.LANDING} component={LandingPage} />
+        </PageContainer>
       </div>
     </Router>
-  )
-};
+)
 export default App;
