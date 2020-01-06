@@ -1,15 +1,7 @@
 import React from 'react'
 import FooterNavigation from './FooterNavigation'
 
-const navItems = [
-  {key: "company", label: "Company", value: "#"},
-  {key: "contactus", label: "Contact us", value: "#"},
-  {key: "carrers", label: "Carrers", value: "#"},
-  {key: "policy", label: "Privacy policy", value: "#"},
-  {key: "terms", label: "Terms", value: "#"}
-]
-
-const Footer = (props) => (
+const Footer = ({items}) => (
   <footer className="footer">
     <div className="footer__logo-box">
       <img className="footer__logo" src="/logo-2x.png" alt="Full logo"/>
@@ -17,7 +9,7 @@ const Footer = (props) => (
     <div className="row">
       <div className="col-1-of-2">
         <FooterNavigation
-          items={navItems}
+          items={items}
         />
       </div>
       <div className="col-1-of-2">

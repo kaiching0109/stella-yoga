@@ -10,7 +10,6 @@ const VIDEO_SOURCES = [
 
 const Landing = () => {
   return (
-    <div>
       <main>
         <section className="section-stories">
           <BackgroundVideo
@@ -36,7 +35,6 @@ const Landing = () => {
           </div>
         </section>
       </main>
-    </div>
   )
 }
 
